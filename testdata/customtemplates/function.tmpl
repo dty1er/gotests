@@ -40,6 +40,22 @@ func {{.TestName}}(t *testing.T) {
 		{{- end}}
 	}{
 		// TODO: Add test cases.
+		{
+			name: "",
+			{{- if .TestParameters}}
+			args: args{
+				{{- range .TestParameters}}
+					        {{Param .}}: "",
+				{{- end}}
+			},
+			{{- end}}
+			{{- range .TestResults}}
+				{{Want .}}: "",
+			{{- end}}
+			{{- if .ReturnsError}}
+				wantErr: true,
+			{{- end}}
+		},
 	}
 	for {{if (or .Subtests (not .IsNaked))}} _, tt := {{end}} range testCases {
         {{- if .Subtests }}t.Run(tt.name, func(t *testing.T) { {{- end -}}
