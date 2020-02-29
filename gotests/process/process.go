@@ -10,7 +10,7 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/yagi5/gotests"
+	"github.com/dty1er/gotests"
 )
 
 const newFilePerm os.FileMode = 0644

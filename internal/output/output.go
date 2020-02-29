@@ -10,8 +10,8 @@ import (
 
 	"golang.org/x/tools/imports"
 
-	"github.com/yagi5/gotests/internal/models"
-	"github.com/yagi5/gotests/internal/render"
+	"github.com/dty1er/gotests/internal/models"
+	"github.com/dty1er/gotests/internal/render"
 )
 
 type Options struct {

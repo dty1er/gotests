@@ -13,7 +13,7 @@ import (
 
 	"strings"
 
-	"github.com/yagi5/gotests/internal/models"
+	"github.com/dty1er/gotests/internal/models"
 )
 
 // ErrEmptyFile represents an empty file error.
@@ -235,14 +235,12 @@ func parseReceiver(fl *ast.FieldList, ul map[string]types.Type, el map[*types.St
 	}
 	r.Fields = append(r.Fields, parseFieldList(st.(*ast.StructType).Fields, ul)...)
 	for i, f := range r.Fields {
-		// https://github.com/yagi5/gotests/issues/69
 		if i >= s.NumFields() {
 			break
 		}
 		f.Name = s.Field(i).Name()
 	}
 	return r
-
 }
 
 func parseFieldList(fl *ast.FieldList, ul map[string]types.Type) []*models.Field {

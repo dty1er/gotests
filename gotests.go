@@ -10,10 +10,10 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/yagi5/gotests/internal/goparser"
-	"github.com/yagi5/gotests/internal/input"
-	"github.com/yagi5/gotests/internal/models"
-	"github.com/yagi5/gotests/internal/output"
+	"github.com/dty1er/gotests/internal/goparser"
+	"github.com/dty1er/gotests/internal/input"
+	"github.com/dty1er/gotests/internal/models"
+	"github.com/dty1er/gotests/internal/output"
 )
 
 // Options provides custom filters and parameters for generating tests.

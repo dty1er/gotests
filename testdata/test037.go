@@ -1,6 +1,6 @@
 package testdata
 
-import "github.com/yagi5/gotests"
+import "github.com/dty1er/gotests"
 
 type someIndirectImportedStruct gotests.Options
 

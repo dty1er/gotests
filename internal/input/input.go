@@ -2,11 +2,11 @@ package input
 
 import (
 	"fmt"
+	"os"
 	"path"
 	"path/filepath"
-	"os"
 
-	"github.com/yagi5/gotests/internal/models"
+	"github.com/dty1er/gotests/internal/models"
 )
 
 // Files returns all the Golang files for the given path. Ignores hidden files.

@@ -9,15 +9,13 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/yagi5/gotests/internal/models"
-	"github.com/yagi5/gotests/internal/render/bindata"
+	"github.com/dty1er/gotests/internal/models"
+	"github.com/dty1er/gotests/internal/render/bindata"
 )
 
 const name = "name"
 
-var (
-	tmpls *template.Template
-)
+var tmpls *template.Template
 
 func init() {
 	initEmptyTmpls()
